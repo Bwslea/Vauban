@@ -1,0 +1,129 @@
+@charset "utf-8" ;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#Block {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+
+#myBtn {
+    font-weight: 900;
+    font-size: large;
+    border-radius: 5px;
+}
+/* Boite Modale (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 132, 0, 0.526);
+}
+/* Contenu de la boite modale */
+.modal-content{
+    background-color: aquamarine;
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.titreImage{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 900;
+    color: aliceblue;
+    font-size:60px;
+}
+.main_title {
+    text-align: left;
+}
+
+/*body
+************/
+
+/*header
+************/
+header {
+    background-color: yellow;
+    width: 100%;
+}
+.red_button {
+    height: 100%;
+    width: 15px;
+    display: inline-block;
+}
+/*nav
+************/
+nav {
+    background-color: aquamarine;
+    width: 100%;
+}
+nav ul li {
+    display: inline-block;
+}
+/*div .banner
+************/
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 300px;
+}
+/*section
+************/
+section {
+    background-color: red;
+    width: 70%;
+    float: left;
+}
+/*aside
+************/
+aside {
+    background-color: rebeccapurple;
+    width: 30%;
+    float: right;
+}
+#my_picture {
+    width: 30%;
+}
+/*footer
+************/
+footer {
+    background-color: olivedrab;
+    width: 100%;
+    clear: both;
+}
+footer img {
+    width: 25%;
+}

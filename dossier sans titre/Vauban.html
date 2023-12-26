@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sur les traces de Vauban</title>
+    <link rel="stylesheet" href="Css/mainStyle.css">
+</head>
+<body>
+<div id="Block">
+    <header>
+        <div class="main_title">
+            <img src="./Images/Capture d’écran 2023-12-09 à 16.40.28.png" height="120px" alt="my_caricature ">
+            <h1>Brouwers Léa</h1>
+            <h2>Sur les traces de VAUBAN</h2>
+        </div>
+
+            <button id="myBtn">
+                <img class="red_button" src="./Images/fleche-droite.png">
+                Pourquoi avoir créé ce site ? </button>
+        <!-- Boite Modale -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close"> &times; </span>
+                <!-- &times; = entité html -->
+                <p>.........</p>
+            </div>
+        </div>
+        <script>
+            // lire la boite modale 
+            var modal=document.getElementById("myModal");
+            // lire le bouton pr ouvrir la boite moale
+            var btn=document.getElementById("myBtn");
+            // lire l'element <span> qui permettra de fermer la boite modale
+            var span=document.getElementsByClassName("close")[0];
+            // lorsque l'utilisateur clique sur le bouton 
+            btn.onclick = function () {
+                modal.style.display = "block"
+            }
+            // lorsque l'utilisateur clique sur le "bouton fermer"       
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            // lorsque l'utilisateur clique en dehors de la boite modale et pour permettre de la fermer
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <div class="navigation_menu">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Reportages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+    <div class="banner">
+        <h2 class="titreImage"> Retour de mes escapades avec VAUBAN</h2>
+        <iframe src="https://giphy.com/embed/ubU1vHzFT4khptFh4U" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Celergen-US-celergen-ubU1vHzFT4khptFh4U">via GIPHY</a></p>
+        
+        <div class="description_banner"></div>
+    </div>
+    <section>
+        <article>
+            <h1>L’infatigable VAUBAN</h1>
+            <img src="./Images/360px-Avallon_Vauban-PhotoRoom.png-PhotoRoom.png" alt="i_adventurer">
+            <p>Sébastien Le Prestre, marquis de Vauban, dit Vauban, est un ingénieur, architecte militaire, urbaniste, hydraulicien et essayiste français.</p>
+            <p>Il conçoit ou améliore une centaine de places fortes. L'ingénieur n'a pas l'ambition de construire des forteresses inexpugnables : la stratégie consiste plutôt à gagner du temps en obligeant l'assaillant à mobiliser des effectifs dix fois supérieurs à ceux de l'assiégé.</p>
+            <p>Douze ouvrages de Vauban, regroupés au sein du réseau des sites majeurs de Vauban, sont classés au patrimoine mondial de l'UNESCO.</p>
+            <p>Le musée des Plans-reliefs aux Invalides à Paris et le musée des Beaux-Arts de Lille accueillent l'essentiel des maquettes et des plans-reliefs des places ou des ouvrages construits ou remaniés par Vauban.</p>
+        </article>
+    </section>
+
+    <aside>
+            <h1>Qui suis-je ? </h1>
+            <img id="my_picture" src="Images/maphoto.jpg" alt="">
+            <p>Bonjour, je me prénome Léa Brouwers.</p>
+            <p>Ayant commencé un bachelier en E-Business, <br> je réalise ce site "sur les traces de Vauban".</p>
+            <p>Ce projet est ma deuxième création de site web.</p>
+            <p>Je vais donc essayer de représenter l'avancement de mes connaissances en codage.</p>
+    </aside>
+
+    <footer>
+        <div class="favorite_trip_div">
+            <h1>Mon voyage préféré </h1>
+            <a href="./Pages/ReportagePref"> <img id="" src="./Images/neuf-brisach-1.jpeg" alt=""></a>
+        </div>
+        <div class="pictures_div">
+            <h1>Mes trois derniers voyages</h1>
+            <ul class="picturesgallery">
+                <li>
+                    <a href="Pages/Reportages"><img class="footerimg" src="./Images/VdC-1ere.jpeg">
+                    <div class="imagetext"><span>Villefranche de Conflent</span></div></a>
+                </li>
+                <li>
+                    <a href="Pages/Reportages"><img class="footerimg" src="./Images/SMR-1ere.jpeg" alt="">
+                    <div class="imagetext"><span>Saint Martin de Ré</span></div></a>
+                </li>
+                <li>
+                    <a href="Pages/Reportages"><img class="footerimg" src="./Images/Arras-PorteRoyale.jpeg" alt="">
+                    <div class="imagetext"><span>Arras</span></div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="accomodations_div">
+            <h1>Mes commentaires</h1>
+            <a><img id="CamaretSurMer" src="./Images/CsM-1ere.jpeg" alt=""></a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
